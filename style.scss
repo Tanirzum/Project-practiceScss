@@ -1,0 +1,104 @@
+@import "nullScss.scss";
+
+@mixin fc($f,$c) {
+	font-size: $f;
+	color: $c;
+}
+body{
+	background-image: url(./icons/ellipse_1_copy_4.png);
+	background-color: #fdfff5;
+	height: 1300px;
+}
+.content{
+
+}
+.header-block{
+	text-align: center;
+}
+.haeder-text{
+	@include fc(14px,#000);
+	text-transform: uppercase;
+	margin-top: 50px;
+	line-height: 20px;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	letter-spacing: 0.2em;
+}
+.header-title{	
+	@include fc(34px,#000);
+	margin-top: 25px;
+}
+.icons-block{
+	margin-top: 30px;
+	margin-left: 390px;
+}
+.icons{
+	border: 10px solid #fff;
+}
+.center-block{
+	@include fc(24px,#273d46);
+	margin-top: 20px;
+	margin-left: 450px;
+	opacity: 0.8;
+	font-family: 'Times New Roman';
+	line-height: 40px;
+	font-weight: 400;
+}
+.center-text{
+	margin-bottom: 20px;
+}
+.center-title{
+	
+}
+.footer-block{
+	margin-left: 500px;
+	margin-top: 25px;
+	font-family: Arial;
+	line-height: 36px;
+}
+.text-ul li{
+	background: url(./icons/check_icon_37.png) no-repeat left;
+	padding-left: 30px;;
+}
+.text-ul li:nth-child(1){
+	@include fc(20px,#273d46 );
+	font-weight: 400;
+	text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+}
+.text-ul li:nth-child(2){
+	@include fc(20px, #80b7b3);
+	font-weight: 400;
+	font-style: italic;
+}
+.text-ul li:nth-child(3){
+	@include fc(20px,#273d46 );
+	font-weight: 700;
+}
+.text-ul li:nth-child(4){
+	@include fc(20px,#273d46);
+	text-decoration: line-through;
+	span{
+		opacity: 0.6;
+	}
+}
+.button-block{
+	
+}
+.button{
+	@include fc(14px, #fff);
+	display: inline-block;
+	background-color: #80b7b3;
+	border-radius: 30px;
+	padding: 0 30px;
+	line-height: 44px;
+	width: 199px;
+	height: 44px;
+	margin-left: 480px;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;
+	text-decoration: none;
+	margin-top: 20px;
+	span{
+	padding-right: 28px;
+	background: url(./icons/shape_2_9.png) right no-repeat;
+	}
+}
